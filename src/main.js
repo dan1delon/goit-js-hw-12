@@ -39,7 +39,7 @@ async function searchPhoto(e) {
         gallery.innerHTML = '';
         currentPage = 1;
   
-        const data = await getImages(currentQuerry, currentPage); 
+        const data = await getImages(currentQuerry, currentPage);
         
         if (data.hits.length === 0) {
             return iziToast.error({

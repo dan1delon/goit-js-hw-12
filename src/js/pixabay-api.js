@@ -15,6 +15,5 @@ export async function getImages(query, page) {
      const {data} = await axios.get('https://pixabay.com/api/', {
             params: newParams
      });
-    
     return data;
 }
